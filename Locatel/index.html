@@ -1,0 +1,214 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2bddaf117c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css">  <!-- Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- Boostrap -->
+    <link rel="icon" href="/IMG/Logo2.png">
+    <title>Locatel</title>
+ </head>
+
+    <!-- Header -->
+    <header class="nav_principal">
+      <form action=""></form>
+        <div class="nav_principal">
+            <nav class="navbar" id="nav_principal">
+                <img class="logo" src="IMG/Logo.png" width="250px" height="94px"></img>
+                  
+                <div class="search_box">
+                    <table class="table_elements">
+                      <tr>
+                        <td>
+                          <input class="search" type="text" placeholder="¿Qué desea buscar?">
+                        </td>
+                        <td>
+                          <span class="fa fa-search"></span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div>
+                    <span id="verCarrito" class="fa fa-shopping-bag"></span><a class="fa carrito_texto">Carrito</a>
+                    <a href="/registro_login.html"><span class="fa fa-user"></span></a><a href="/registro_login.html" class="fa user_texto">Cuenta</a>
+                  </div>
+
+
+              </nav>
+        </div>
+
+        <div class="nav_secundario">
+          <div class="navbar2" id="header2">
+            <a class="nav-link" href="">Equipos médicos</a></li>
+            <a class="nav-link" href="">Farmacia</a></li>
+            <a class="nav-link" href="">Cuidado personal</a></li>
+            <a class="nav-link" href="">Cuidado del bebe</a>
+            <a class="nav-link" href="">Nutrición especializada</a>
+            <a class="nav-link" href="">Dermocosmeticos</a>
+            <a class="nav-link" href="">Alimentos</a>
+            <a class="nav-link" href="">Hogar</a>
+          </div>
+        </div>
+
+    </header>
+    
+        <!-- Body -->
+    <body>
+    <!--Carousel-->
+    <div id="carousel_principal" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel_principal" data-bs-slide-to="0" class="active btn_custom" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel_principal" data-bs-slide-to="1" class="btn_custom" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel_principal" data-bs-slide-to="2" class="btn_custom" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel_principal" data-bs-slide-to="2" class="btn_custom" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="/IMG/lban3.png" class="d-block imagen_custom img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+            <img src="/IMG/lban4.jpg" class="d-block imagen_custom img-fluid" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+            <img src="/IMG/lban5.jpg" class="d-block imagen_custom img-fluid" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+            <img src="/IMG/lban6.jpg" class="d-block imagen_custom img-fluid" alt="Slide 4">
+            </div>
+        </div>
+    </div>
+
+      <!--Ofertas-->
+      <div class="texto_centro">
+        <strong class="centro_oferta">Ofertas del mes</strong><u class="centro_ver" href=""> Ver todos los productos</u><strong class="centro_flecha"> →</strong>
+      </div>
+
+      <div id="shopContentOferta" class="producto_contenedor"></div>
+
+      <div class="contenedor_principal_ofertas">
+        <div class="fila_img1">
+          <img src="/IMG/sban1.jpg" alt="Imagen 1" class="imagen">
+          <img src="/IMG/sban2.jpg" alt="Imagen 2" class="imagen">
+        </div>
+        <img src="/IMG/lban1.jpg" alt="Imagen 3" class="fila_img2">
+      </div>
+
+      <!--Interes-->
+      <div class="texto_centro">
+        <strong class="centro_oferta">Podría interesarte</strong><u class="centro_ver" href=""> Ver todos los productos</u><strong class="centro_flecha"> →</strong>
+      </div>
+
+      <div id="shopContent" class="producto_contenedor"></div>
+
+      <div class="contenedor_principal_cat">
+        <div class="img_col1">
+          <img src="/IMG/alimentos.webp" width="300px" alt="">
+          <img src="IMG/hogar.webp" alt="Imagen 2" width="300px">
+        </div>
+        <img src="/IMG/dermo.webp" alt="Imagen 3" class="img_col2">
+        <div class="img_col1">
+          <img src="/IMG/bebe.webp" width="300px" alt="">
+          <img src="/IMG/nutricion.webp" width="300px" alt="">
+        </div>
+        <img src="/IMG/personal.webp" alt="Imagen 3" class="img_col2">
+        <div class="img_col1">
+          <img src="/IMG/equipos.webp" width="300px" alt="">
+          <img src="/IMG/farmacia.webp" width="300px" alt="">
+        </div>
+      </div>
+
+      <div class="texto_centro">
+        <strong class="centro_oferta">Proximamente en nuestra tienda</strong><u class="centro_ver" href=""> Ver todos los productos</u><strong class="centro_flecha"> →</strong>
+      </div> 
+
+      <div id="modal-container" class="modal-container">
+      </div>
+
+      <div id="shopContentReserva" class="producto_contenedor"></div>
+    
+
+    </body>
+
+         <!-- Footer -->
+    <footer class="footer">
+        <div class="left-footer">
+          <div class="row">
+      
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-about">
+                <div class="footer-logo">
+                  <a href=""><img src="/IMG/logo3.png" width="200" height="" alt=""></a>
+                </div>
+                <p>
+                  En Locatel, nuestra pasión es cuidar de tu salud y bienestar. Somos una farmacéutica comprometida con la excelencia en la disponibilidad de productos farmacéuticos de alta calidad para la comunidad.</p>
+                  <a href=""><img src="" alt=""></a>
+                </div>            
+            </div>
+      
+            <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+              <div class="footer-widget">
+                <h6>Ir a</h6>
+                <ul>
+                  <li><strong class="links_flecha">> </strong><a href="">Equipos Médicos</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Hogar</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Dermocosmeticos </a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Cuidado del bebé</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Nutrición especializada</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Cuidado personal</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Equipos médicos</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Farmacia</a></li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="footer-widget">
+                <h6>Servicio al cliente</h6>
+                <ul>
+                  <li><strong class="links_flecha">> </strong><a href="">Contacta con nosotros</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Preguntas frecuentes</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Programas de salud</a></li>
+                  <li><strong class="links_flecha">> </strong><a href="">Peticiones, quejas y reclamos</a></li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+            <div class="footer-widget">
+                <h6>¿Eres parte de la familia Locatel?</h6>
+                <div class="footer-newsletter">
+                  <p>Se el primero en saber sobre nuevos productos, ofertas y promociones</p>
+                  <form action="#">
+                    <input type="text" placeholder="Ingrese su mail">
+                    <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
+                    <p class="acominicio">¿Ya eres parte de la familia Locatel? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
+                  </form>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="footer-copyright-text">
+                <p>&copy; 2023 <strong>Locatel.</strong> Todos los derechos reservados</p>
+                <div class="reloj">
+                  <p class="tiempo"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+         <!-- JS necesarios-->
+         <script src="/JS/funciones_carousel.js"> </script>
+         <script src="JS/productos.js"></script>
+         <script src="JS/app.js"></script>
+         <script src="JS/carrito.js"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ </html>
